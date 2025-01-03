@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:cardCornerRadius="8dp"-->
+<!--        app:cardElevation="4dp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="8dp">-->
+
+<!--            &lt;!&ndash; Movie Poster &ndash;&gt;-->
+<!--            <ImageView-->
+<!--                android:id="@+id/poster"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:contentDescription="@string/movie_poster"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent" />-->
+
+<!--            &lt;!&ndash; Movie Title &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/title"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:ellipsize="end"-->
+<!--                android:maxLines="1"-->
+<!--                android:text="Movie Title"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toEndOf="@id/poster"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--            &lt;!&ndash; Movie Overview &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/overview"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="This is a brief overview of the movie. It should be concise and engaging."-->
+<!--                android:textColor="@android:color/darker_gray"-->
+<!--                android:textSize="14sp"-->
+<!--                android:maxLines="3"-->
+<!--                android:ellipsize="end"-->
+<!--                app:layout_constraintStart_toEndOf="@id/poster"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/title"-->
+<!--                app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--            &lt;!&ndash; Rating and Release Date Row &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/infoRow"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                app:layout_constraintStart_toEndOf="@id/poster"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/overview"-->
+<!--                app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--                &lt;!&ndash; Star Icon &ndash;&gt;-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/starIcon"-->
+<!--                    android:layout_width="16dp"-->
+<!--                    android:layout_height="16dp"-->
+<!--                    android:layout_marginEnd="4dp"-->
+<!--                    android:src="@drawable/ic_star"-->
+<!--                    android:contentDescription="@string/rating_icon"-->
+<!--                    app:tint="@color/teal_200" />-->
+
+<!--                &lt;!&ndash; Movie Rating &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:id="@+id/rating"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="8.5"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                &lt;!&ndash; Separator &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:id="@+id/separator"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:text="|"-->
+<!--                    android:textColor="@android:color/darker_gray"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                &lt;!&ndash; Release Date &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:id="@+id/releaseDate"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="2023-11-24"-->
+<!--                    android:textColor="@android:color/darker_gray"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextText2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="text"-->
+<!--                android:drawableStart="" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+</layout>

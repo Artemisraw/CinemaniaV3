@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CinemaniaV3</string>
+    <string name="movie_poster" />
+    <string name="rating_icon" />
+</resources>
